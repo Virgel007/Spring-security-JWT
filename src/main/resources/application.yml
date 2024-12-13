@@ -1,3 +1,6 @@
+server:
+  port: 8076
+
 spring:
   data:
     redis:
@@ -19,3 +22,7 @@ app:
     secret: "someSecretKey"
     tokenExpiration: 3s
     refreshTokenExpiration: 30m
+
+logging:
+  file:
+    name: log/app.log

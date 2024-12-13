@@ -27,6 +27,8 @@ public class User {
 
     private String password;
 
+    private Boolean isAccountNonLocked;
+
     @ElementCollection(targetClass = RoleType.class, fetch = FetchType.EAGER)
     @JoinTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
     @Column(name = "roles", nullable = false)
